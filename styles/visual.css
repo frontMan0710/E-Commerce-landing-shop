@@ -1,0 +1,54 @@
+:root {
+    --color-white: rgba(255, 255, 255, 1);
+    --color-cherry: rgba(158, 48, 64, 1);
+    --color-cherry-opacity: rgba(158, 48, 64, 0.3);
+    --color-black: rgba(0, 0, 0, 1);
+    --color-grey: rgba(104, 104, 104, 1);
+
+}
+.content-border {
+    width: 1280px;
+    height: 100%;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+.cards__card {
+    display: flex;
+    flex-direction: column;
+}
+.cards__card img {
+    max-width: 300px;
+    max-height: 190px;
+}
+
+.sectionTitle {
+    text-align: center;
+    padding-bottom: 40px;
+}
+.sectionTitle >  h2 {
+    font-family: "Hind Siliguri", sans-serif, SemiBold;
+    font-weight: 600;
+    font-size: 36px;
+}
+.sectionButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.sectionButton > a {
+    font-family: "Hind Siliguri", sans-serif, SemiBold;
+    background-color: var(--color-cherry);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 162px;
+    height: 49px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+}

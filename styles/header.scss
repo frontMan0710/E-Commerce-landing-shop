@@ -1,0 +1,146 @@
+@media screen and (min-width: 1280px) {
+  header {
+    background-color: var(--color-white);
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 9;
+    nav:nth-of-type(1) {
+      display: flex;
+      justify-content: space-between;
+      height: 56px;
+      a:active {
+        color: var(--color-cherry);
+      }
+      .navPhoneNumber {
+        font-family: "Hind Siliguri", sans-serif, Regular;
+        color: var(--color-black);
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        width: 174px;
+        font-size: 14px;
+        a {
+          margin-left: 14px;
+        }
+      }
+      .navEmail {
+        font-family: "Hind Siliguri", sans-serif, Regular;
+        color: var(--color-black);
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        width: 228px;
+        font-size: 14px;
+        a {
+          margin-left: 14px;
+        }
+      }
+      .centerTitle {
+        font-family: "Hind Siliguri", sans-serif, SemiBold;
+        color: var(--color-cherry);
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        width: 415px;
+        padding-left: 137px;
+        font-size: 18px;
+      }
+      .source {
+        font-family: "Hind Siliguri", sans-serif, Regular;
+        color: var(--color-black);
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        width: 326px;
+        font-size: 14px;
+        a {
+          margin-left: 14px;
+        }
+      }
+    }
+    nav:nth-of-type(2) {
+      display: flex;
+      justify-content: space-between;
+      height: 109px;
+      .logo {
+        display: flex;
+        align-items: center;
+        width: 325px;
+        a {
+          font-family: "Hind Siliguri", sans-serif, SemiBold;
+          color: var(--color-cherry);
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 30px;
+        }
+      }
+      .menu {
+        font-family: "Hind Siliguri", sans-serif, Medium;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        width: 630px;
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        .item {
+          color: var(--color-grey);
+          user-select: none;
+          padding: 21px;
+        }
+        .item:hover {
+          background-color: var(--color-cherry);
+          color: var(--color-white);
+          cursor: pointer;
+        }
+        .has-submenu {
+          position: relative;
+          .submenu {
+            position: absolute;
+            display: none;
+            height: auto;
+            left: 0;
+            top: 100%;
+            li {
+              width: max-content;
+              float: none;
+              padding: 10px 0 10px 0;
+              a {
+                background-color: var(--color-white);
+                color: var(--color-black);
+                text-decoration: none;
+                padding: 10px 20px;
+                &:hover {
+                  background-color: var(--color-cherry);
+                  color: var(--color-white);
+                }
+              }
+            }
+          }
+        }
+      }
+      .profileAction {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 325px;
+        .icon {
+          cursor: pointer;
+        }
+        .signInButton {
+          font-family: "Hind Siliguri", sans-serif, SemiBold;
+          background-color: var(--color-cherry);
+          color: var(--color-white);
+          font-weight: 600;
+          width: 126px;
+          height: 49px;
+          font-size: 18px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
