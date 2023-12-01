@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce - Landing Page</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="libs/animations/animate.css">
+    <link rel="stylesheet" href="./libs/animations/animate.css">
+    <link rel="stylesheet" href="./libs/swiper/unpkg.com_swiper@8.4.7_swiper-bundle.min.css">
 </head>
 <body>
 <header>
@@ -71,21 +72,23 @@
     </section>
     <section class="first">
         <div class="content-border first__content">
-            <div class="cards first-cards animate__animated wow animate__fadeInLeft">
-                <div class="cards__card">
-                    <img class="icon" src="./images/car.svg">
-                    <span>Free Delivery</span>
-                    <p>For all orders above $35</p>
-                </div>
-                <div class="cards__card">
-                    <img class="icon" src="./images/shell.svg">
-                    <span>Secure Payment</span>
-                    <p>100% Secure payment methods</p>
-                </div>
-                <div class="cards__card">
-                    <img class="icon" src="./images/phone.svg">
-                    <span>24/7 Support</span>
-                    <p>We have dedicated Support</p>
+            <div class="swiper swiperContainer">
+                <div class="cards first-cards swiper-wrapper animate__animated wow animate__fadeInLeft">
+                    <div class="cards__card swiper-slide">
+                        <img class="icon" src="./images/car.svg">
+                        <span>Free Delivery</span>
+                        <p>For all orders above $35</p>
+                    </div>
+                    <div class="cards__card swiper-slide">
+                        <img class="icon" src="./images/shell.svg">
+                        <span>Secure Payment</span>
+                        <p>100% Secure payment methods</p>
+                    </div>
+                    <div class="cards__card swiper-slide">
+                        <img class="icon" src="./images/phone.svg">
+                        <span>24/7 Support</span>
+                        <p>We have dedicated Support</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -181,37 +184,39 @@
             <div class="fourth-title sectionTitle">
                 <h2 class="animate__animated wow animate__fadeInRightBig">Trending Product</h2>
             </div>
-            <div class="cards fourth-cards slider">
-                <div class="fourth-cards__card cards__card wow slider__slide">
-                    <img src="./images/towelSecFourthOne.jpg" alt="">
-                    <h3>PERFECT GIFT EVEN FOR YOURSELF!</h3>
-                    <p>
-                        Well suited as a gift set, these cotton towels
-                        look so decorative and soft that we won’t judge
-                        if you want to keep them for your family
-                        and yourself.
-                    </p>
-                </div>
-                <div class="fourth-cards__card cards__card wow slider__slide">
-                    <img src="./images/towelSecFourthTwo.jpg" alt="">
-                    <h3>USE FOR ANYTHING</h3>
-                    <p>
-                        Perfect for your hands, face and  body…
-                        and for your kids too! These towels’ softness is
-                        ideal for toddler’s and baby’s delicate skin.
-                        And the best part? They’re washable,
-                        quick-dry towels that will last forever.
-                    </p>
-                </div>
-                <div class="fourth-cards__card cards__card wow slider__slide">
-                    <img src="./images/towelSecFourthThree.jpg" alt="">
-                    <h3>EXTRA ABSORBENT</h3>
-                    <p>
-                        Thanks to its natural properties, our 100%
-                        Turkish Cotton Towels are super absorbent,
-                        making the m perfect for drying off in
-                        any scenario.
-                    </p>
+            <div class="swiper swiperContainer">
+                <div class="cards fourth-cards swiper-wrapper">
+                    <div class="fourth-cards__card cards__card wow swiper-slide">
+                        <img src="./images/towelSecFourthOne.jpg" alt="">
+                        <h3>PERFECT GIFT EVEN FOR YOURSELF!</h3>
+                        <p>
+                            Well suited as a gift set, these cotton towels
+                            look so decorative and soft that we won’t judge
+                            if you want to keep them for your family
+                            and yourself.
+                        </p>
+                    </div>
+                    <div class="fourth-cards__card cards__card wow swiper-slide">
+                        <img src="./images/towelSecFourthTwo.jpg" alt="">
+                        <h3>USE FOR ANYTHING</h3>
+                        <p>
+                            Perfect for your hands, face and  body…
+                            and for your kids too! These towels’ softness is
+                            ideal for toddler’s and baby’s delicate skin.
+                            And the best part? They’re washable,
+                            quick-dry towels that will last forever.
+                        </p>
+                    </div>
+                    <div class="fourth-cards__card cards__card wow swiper-slide">
+                        <img src="./images/towelSecFourthThree.jpg" alt="">
+                        <h3>EXTRA ABSORBENT</h3>
+                        <p>
+                            Thanks to its natural properties, our 100%
+                            Turkish Cotton Towels are super absorbent,
+                            making the m perfect for drying off in
+                            any scenario.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="fourth-show-button sectionButton animate__animated wow animate__fadeInDown">
@@ -243,17 +248,19 @@
             <div class="sixth-title sectionTitle">
                 <h2 class="animate__animated wow animate__fadeInDown">Product Gallery</h2>
             </div>
-            <div class="gallery slider">
-                <div class="gallery__item slider__slide">
-                    <img class="wow animate__animated animate__delay-1s animate__fadeIn" src="./images/galleryOne.jpg" alt="">
-                    <img class="wow animate__animated animate__delay-1s animate__fadeIn" src="./images/galleryTwo.jpg" alt="">
-                </div>
-                <div class="gallery__item slider__slide">
-                    <img class="wow animate__animated animate__delay-1s animate__fadeIn" src="./images/galleryThree.jpg" alt="">
-                </div>
-                <div class="gallery__item slider__slide">
-                    <img class="wow animate__animated animate__delay-1s animate__fadeIn" src="./images/galleryFour.jpg" alt="">
-                    <img class="wow animate__animated animate__delay-1s animate__fadeIn" src="./images/galleryFive.jpg" alt="">
+            <div class="swiper swiperContainer">
+                <div class="gallery swiper-wrapper">
+                    <div class="gallery__item gallery__item1 swiper-slide">
+                        <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="355" src="./images/galleryOne.jpg" alt="">
+                        <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="355" src="./images/galleryTwo.jpg" alt="">
+                    </div>
+                    <div class="gallery__item gallery__item2 swiper-slide">
+                        <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="510" src="./images/galleryThree.jpg" alt="">
+                    </div>
+                    <div class="gallery__item gallery__item3 swiper-slide">
+                        <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="355" src="./images/galleryFour.jpg" alt="">
+                        <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="355" src="./images/galleryFive.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -328,9 +335,11 @@
         </div>
     </div>
 </footer>
-<script src="./jquery/jquery-3.7.1.js"></script>
-<script src="libs/animations/wowJS/wow.min.js"></script>
-<script src="./jquery/header.js"></script>
-<script src="./jquery/visual.js"></script>
+<script src="./libs/jQuery/jquery-3.7.1.js"></script>
+<script src="./libs/animations/wowJS/wow.min.js"></script>
+<script src="./libs/swiper/unpkg.com_swiper@8.4.7_swiper-bundle.min.js"></script>
+<script src="./jscript/header.js"></script>
+<script src="./jscript/visual.js"></script>
+<script src="./jscript/slider.js"></script>
 </body>
 </html>

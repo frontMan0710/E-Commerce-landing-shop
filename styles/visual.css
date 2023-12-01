@@ -10,6 +10,13 @@
     width: 1280px;
     height: 100%;
 }
+.swiperContainer {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
 .cards {
     display: flex;
     justify-content: space-between;

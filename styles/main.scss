@@ -325,15 +325,43 @@ ul li { list-style: none;}
       .sixth__content {
         margin: 0 auto;
         padding-bottom: 40px;
+        height: 100%;
         .gallery {
           display: flex;
+          align-items: center;
           justify-content: space-between;
-          .gallery__item:nth-of-type(1), .gallery__item:nth-of-type(3) {
+          height: 100%;
+          .gallery__item {
+            img {
+              border-radius: 10px;
+            }
+          }
+          .gallery__item1 {
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             justify-content: space-between;
+            height: 510px;
+            width: 100%;
           }
-          .gallery__item {
+          .gallery__item2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 510px;
+            width: 100%;
+            img {
+              border-radius: 10px;
+            }
+          }
+          .gallery__item3 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            height: 510px;
+            width: 100%;
             img {
               border-radius: 10px;
             }
