@@ -78,4 +78,22 @@
         width: 92vw;
         height: 100%;
     }
+    .sectionTitle >  h2 {
+        font-family: "Hind Siliguri", sans-serif, SemiBold;
+        font-weight: 600;
+        font-size: 4.5vw;
+    }
+    .sectionButton > a {
+        font-family: "Hind Siliguri", sans-serif, SemiBold;
+        background-color: var(--color-cherry);
+        color: var(--color-white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20vw;
+        height: 5vw;
+        font-weight: 600;
+        font-size: 2vw;
+        border-radius: 5px;
+    }
 }

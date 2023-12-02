@@ -402,45 +402,42 @@
           align-items: center;
           justify-content: center;
           list-style: none;
-          width: 44vw;
+          width: 50vw;
           padding: 0;
           margin-left: 5vw;
-          font-size: 1.5vw;
           font-weight: 500;
           //order: 2;
           .item {
             color: var(--color-grey);
             user-select: none;
             text-align: center;
+            font-size: 2.5vw;
             padding: 2vw;
             &:hover {
               background-color: var(--color-cherry);
               color: var(--color-white);
               cursor: pointer;
             }
+            &:last-child {
+              min-width: 17vw;
+            }
           }
-
           .has-submenu {
             position: relative;
-
             .submenu {
               position: absolute;
               display: none;
               height: auto;
               left: 0;
               top: 100%;
-
               li {
                 min-width: max-content;
-                float: none;
                 padding: 1vw 0;
-
                 a {
                   background-color: var(--color-white);
                   color: var(--color-black);
                   text-decoration: none;
                   padding: 1vw 2vw;
-
                   &:hover {
                     background-color: var(--color-cherry);
                     color: var(--color-white);
