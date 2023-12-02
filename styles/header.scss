@@ -310,7 +310,7 @@
     }
   }
 }
-@media screen and (max-width: 1023px) and (min-width: 300px) {
+@media screen and (max-width: 1023px) and (min-width: 768px) {
   header {
     background-color: var(--color-white);
     position: fixed;
@@ -322,6 +322,7 @@
     }
     nav:nth-of-type(2) {
       display: flex;
+      align-items: center;
       justify-content: space-between;
       height: 70px;
 
@@ -338,10 +339,63 @@
           font-size: 2.3vw;
         }
       }
+      .burger-icon {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        z-index: 3;
+        width: 30px;
+        height: 20px;
+      }
+      .burger-icon span, .burger-icon::before, .burger-icon::after {
+        background-color: var(--color-black);
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        left: 0;
+        transition: 0.3s ease 0s;
+      }
+      .burger-icon::before {
+        content: "";
+        top: 0;
+      }
+      .burger-icon::after {
+        content: "";
+        bottom: 0;
+      }
+      .burger-icon span {
+        top: 50%;
+        transform: scale(1) translateY(-50%) translateX(0%);
+      }
+      .burger-icon.active::before{
+        content: "";
+        top: 50%;
+        transform: rotate(-45deg) translateY(-50%);
+      }
+      .burger-icon.active::after {
+        content: "";
+        bottom: 50%;
+        transform: rotate(45deg) translateY(50%);
+      }
+      .burger-icon.active span {
+        top: 50%;
+        transform: scale(1) translateX(140px);
+      }
+      .menu-content.active {
+        left: 0;
+      }
       .menu-content {
+        background-color: var(--color-white-opacity);
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        height: 66px;
+        top: 70px;
+        left: -100%;
+        transform: translateX(0%);
+        transition: left 0.3s ease 0s;
         .menu {
           font-family: "Hind Siliguri", sans-serif, Medium;
           display: flex;
@@ -350,20 +404,20 @@
           list-style: none;
           width: 44vw;
           padding: 0;
-          margin: 0;
+          margin-left: 5vw;
           font-size: 1.5vw;
           font-weight: 500;
-
+          //order: 2;
           .item {
             color: var(--color-grey);
             user-select: none;
+            text-align: center;
             padding: 2vw;
-          }
-
-          .item:hover {
-            background-color: var(--color-cherry);
-            color: var(--color-white);
-            cursor: pointer;
+            &:hover {
+              background-color: var(--color-cherry);
+              color: var(--color-white);
+              cursor: pointer;
+            }
           }
 
           .has-submenu {
@@ -377,7 +431,7 @@
               top: 100%;
 
               li {
-                width: max-content;
+                min-width: max-content;
                 float: none;
                 padding: 1vw 0;
 
@@ -396,81 +450,30 @@
             }
           }
         }
-      }
-    }
-      .profileAction {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 23vw;
-        .icon {
-          cursor: pointer;
-        }
-        .signInButton {
-          font-family: "Hind Siliguri", sans-serif, SemiBold;
-          background-color: var(--color-cherry);
-          color: var(--color-white);
-          font-weight: 600;
-          width: 8.75vw;
-          height: 4vw;
-          font-size: 1.5vw;
-          border-radius: 5px;
-        }
-      }
-    .burger-icon {
-      display: block;
-      position: relative;
-      z-index: 3;
-      width: 30px;
-      height: 20px;
-    }
-    .burger-icon span, .burger-icon::before, .burger-icon::after {
-      background-color: var(--color-black);
-      position: absolute;
-      height: 10%;
-      width: 100%;
-      left: 0;
-      transition: 0.3s ease 0s;
-    }
-    .burger-icon::before {
-      content: "";
-      top: 0;
-    }
-    .burger-icon::after {
-      content: "";
-      bottom: 0;
-    }
-    .burger-icon span {
-      top: 50%;
-      transform: scale(1) translateY(-50%) translateX(0%);
-    }
-    .burger-icon.active::before{
-      content: "";
-      top: 50%;
-      transform: rotate(-45deg) translateY(-50%);
-    }
-    .burger-icon.active::after {
-      content: "";
-      bottom: 50%;
-      transform: rotate(45deg) translateY(50%);
-    }
-    .burger-icon.active span {
-      top: 50%;
-      transform: scale(1) translateX(140px);
-    }
-    .menu-content.active {
-      left: 0;
-    }
-    .menu-content {
-      background-color: var(--color-cherry-opacity);
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: -100%;
-      transform: translateX(0%);
-      transition: left 0.3s ease 0s;
-    }
+        .profileAction {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 23vw;
+          height: 65.91px;
+          margin-right: 5vw;
+          //order: 1;
+          .icon {
+            cursor: pointer;
+          }
 
+          .signInButton {
+            font-family: "Hind Siliguri", sans-serif, SemiBold;
+            background-color: var(--color-cherry);
+            color: var(--color-white);
+            font-weight: 600;
+            width: 8.75vw;
+            height: 4vw;
+            font-size: 1.5vw;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
   }
 }

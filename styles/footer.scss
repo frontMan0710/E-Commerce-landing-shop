@@ -2,7 +2,6 @@
   footer {
     padding-top: 40px;
     padding-bottom: 40px;
-
     .footer-subscription {
       display: flex;
       align-items: center;
@@ -115,7 +114,6 @@
   footer {
     padding-top: 40px;
     padding-bottom: 40px;
-
     .footer-subscription {
       display: flex;
       align-items: center;
@@ -223,4 +221,118 @@
       }
     }
   }
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px){
+  footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .footer-subscription {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 auto;
+      padding-bottom: 60px;
+      .footer-message {
+        p {
+          font-family: "Open Sans", sans-serif, Regular;
+          text-align: center;
+          font-weight: 400;
+          line-height: 1.7;
+          font-size: 1.32vw;
+        }
+      }
+      form {
+        display: flex;
+        width: 45.7vw;
+        height: 3.82vw;
+        margin-top: 20px;
+        input {
+          font-family: "Open Sans", sans-serif, Regular;
+          border: 1px solid var(--color-cherry-opacity);
+          outline: none;
+          width: 33vw;
+          height: 3.82vw;
+          font-size: 1.32vw;
+          padding-left: 20px;
+          border-radius: 5px;
+          &::placeholder {
+            font-family: "Open Sans", sans-serif, Regular;
+            color: var(--color-grey);
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 1.32vw;
+          }
+        }
+        button {
+          font-family: "Hind Siliguri", sans-serif, SemiBold;
+          background-color: var(--color-cherry);
+          color: var(--color-white);
+          text-align: center;
+          font-weight: 600;
+          width: 15vw;
+          height: 3.82vw;
+          font-size: 1.4vw;
+        }
+      }
+    }
+    .footer-callback {
+      display: flex;
+      margin: 0 auto;
+      padding-top: 60px;
+      padding-bottom: 40px;
+      .list-column:nth-of-type(1) {
+        width: 30vw;
+      }
+      .list-column:nth-of-type(2) {
+        width: 41vw;
+      }
+      .list-column {
+        .footerTitle {
+          font-family: "Hind Siliguri", sans-serif, SemiBold;
+          color: var(--color-black);
+          font-weight: 600;
+          font-size: 2.34vw;
+        }
+        ul {
+          li {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 25px;
+            a {
+              font-family: "Open Sans", sans-serif, Regular;
+              color: var(--color-grey);
+              text-decoration: none;
+              font-weight: 400;
+              font-size: 1.32vw;
+              margin-left: 20px;
+            }
+          }
+        }
+        .serviceToPay {
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            padding: 0 12px 0 12px;
+          }
+        }
+        hr {
+          background-color: var(--color-grey);
+          height: 1px;
+          opacity: 0.6;
+          margin-top: 3vw;
+        }
+        p {
+          font-family: "Open Sans", sans-serif, Regular;
+          color: var(--color-grey);
+          font-weight: 400;
+          font-size: 1.17vw;
+          margin-top: 15px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 300px) {
+  
 }
