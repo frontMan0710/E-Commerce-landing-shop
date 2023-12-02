@@ -14,3 +14,8 @@ $(function() {
         $(".has-submenu .submenu").slideToggle(100)
     })
 })
+$(function () {
+    $(".burger-icon").click(function () {
+        $(".menu-content, .burger-icon").toggleClass("active")
+    })
+})
