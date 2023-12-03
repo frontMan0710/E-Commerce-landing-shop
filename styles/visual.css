@@ -96,6 +96,7 @@
         font-size: 2vw;
         border-radius: 5px;
     }
+<<<<<<< HEAD
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
     .content-border {
@@ -107,4 +108,6 @@
         font-weight: 600;
         font-size: 2rem;
     }
+=======
+>>>>>>> fb7c0e16ba3e6a1a7eb383d7aa3a67f96d33f3b0
 }
