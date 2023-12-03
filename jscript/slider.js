@@ -6,10 +6,7 @@ new Swiper(".swiper", {
         0: {
             slidesPerView: 1,
         },
-        425: {
-            slidesPerView: 2,
-        },
-        767: {
+        768: {
             slidesPerView: 3,
         },
     },
