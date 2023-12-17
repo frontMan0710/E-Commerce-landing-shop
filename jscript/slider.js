@@ -1,4 +1,4 @@
-new Swiper(".swiper", {
+new Swiper(".cardSwiper", {
     spaceBetween: 30,
     loop: true,
     direction: 'horizontal',
@@ -16,5 +16,18 @@ new Swiper(".swiper", {
     },
     autoplay: {
         delay: 4000,
+    }
+})
+new Swiper(".quote-block", {
+    loop: true,
+    direction: 'horizontal',
+    slidesPerView: 1,
+    lazy: {
+        loadPrevNext: false,
+        loadOnTransitionStart: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
     }
 })
