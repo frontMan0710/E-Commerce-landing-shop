@@ -13,5 +13,8 @@ new Swiper(".swiper", {
     lazy: {
         loadPrevNext: false,
         loadOnTransitionStart: false,
+    },
+    autoplay: {
+        delay: 4000,
     }
 })

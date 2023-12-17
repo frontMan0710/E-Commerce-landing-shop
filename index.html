@@ -15,59 +15,89 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./libs/animations/animate.css">
     <link rel="stylesheet" href="./libs/swiper/unpkg.com_swiper@8.4.7_swiper-bundle.min.css">
+    <link rel="stylesheet" href="libs/modal/magnific-popup.css">
 </head>
 <body>
 <header>
     <nav class="content-border" id="callback">
         <div class="navPhoneNumber">
             <img src="./images/navPhoneNumber.svg" alt="">
-            <a id="phoneNumber">801-462-5120</a>
+            <a href="javascript:void(0)">801-462-5120</a>
         </div>
         <div class="navEmail">
             <img src="./images/navEmail.svg" alt="">
-            <a id="email">Support@concetti-di-lusso.com</a>
+            <a href="javascript:void(0)">Support@concetti-di-lusso.com</a>
         </div>
         <div class="centerTitle">
-            FREE SHIPPING! Orders $35+
+            <a href="javascript:void(0)">FREE SHIPPING! Orders $35+</a>
         </div>
         <div class="source">
             <img src="./images/mapIcon.svg" alt="">
-            <a>8385 South Allen Street, Suite 111, Sandy UT 84070</a>
+            <a href="javascript:void(0)">8385 South Allen Street, Suite 111, Sandy UT 84070</a>
         </div>
     </nav>
     <nav class="content-border">
         <div class="logo">
-            <a href="index.html">CONCETTI DI-LUSSO</a>
+            <span>CONCETTI DI-LUSSO</span>
         </div>
         <div class="burger-icon">
             <span></span>
         </div>
         <div class="menu-content">
-            <ul class="menu">
-                <li class="item">Home</li>
-                <li class="has-submenu item">Towels
-                    <ul class="submenu">
-                        <li><a href="#" class="subItem">Towel variant</a></li>
-                        <li><a href="#" class="subItem">Towel variant</a></li>
-                        <li><a href="#" class="subItem">Towel variant</a></li>
-                        <li><a href="#" class="subItem">Other variant</a></li>
-                    </ul>
-                </li>
-                <li class="item">Robes</li>
-                <li class="item">Bathroom Sets</li>
-            </ul>
-            <ul class="profileAction">
-                <li class="iconSearch">
-                    <img class="icon" src="./images/search.svg" alt="">
-                </li>
-                <li class="iconMarks">
-                    <img class="icon" src="./images/marks.svg" alt="">
-                </li>
-                <li class="iconCart">
-                    <img class="icon" src="./images/cart.svg" alt="">
-                </li>
-                <button type="button" class="signInButton">SIGN IN</button>
-            </ul>
+            <div class="content-border">
+                <ul class="menu">
+                    <li class="item">Home</li>
+                    <li class="has-submenu item">Towels
+                        <ul class="submenu">
+                            <li class="subItem">Towel variant</li>
+                            <li class="subItem">Towel variant</li>
+                            <li class="subItem">Towel variant</li>
+                            <li class="subItem">Other variant</li>
+                        </ul>
+                    </li>
+                    <li class="item">Robes</li>
+                    <li class="item">Bathroom Sets</li>
+                </ul>
+                <div class="inputBox">
+                    <form action="/search" method="get" name="search" class="searchForm">
+                        <input type="text" id="search">
+                        <button type="submit">SEARCH</button>
+                    </form>
+                </div>
+                <ul class="profileAction">
+                    <li class="iconSearch">
+                        <img class="icon searchCall" src="./images/search.svg" alt="">
+                    </li>
+                    <li class="iconMarks">
+                        <img class="icon" src="./images/marks.svg" alt="">
+                    </li>
+                    <li class="iconCart">
+                        <img class="icon" src="./images/cart.svg" alt="">
+                    </li>
+                    <button type="button" id="callbackModal" class="signInButton">CALLBACK</button>
+                </ul>
+                <div id="callbackModalContainer" class="mfp-hide">
+                    <div class="modalElements">
+                        <div class="logo">
+                            <span>CONCETTI DI-LUSSO</span>
+                        </div>
+                        <form action="" id="callbackForm">
+                            <input name="userPhone" type="number" id="phoneNumber" placeholder="Phone number" maxlength="15">
+                            <input name="userName" type="text" id="name" placeholder="Your name" minlength="1" maxlength="64">
+                            <button type="submit">SIGN UP</button>
+                        </form>
+                        <div class="modalFooter">
+                            <p>
+                                Have you a profile? <span>|</span> <a href="javascript:void(0)">Log in</a>
+                            </p>
+                            <hr>
+                            <p>
+                                © 2020, Concetti Di-Lusso Powered by Shopify
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 </header>
@@ -77,7 +107,7 @@
             <div class="text-wrapper animate__animated wow animate__fadeInDown">
                 <h1>Beautiful Color <br> Contrast!</h1>
                 <p>Over 50 Collections to Choose for !</p>
-                <a href="#">SHOP NOW →</a>
+                <a href="javascript:void(0)">SHOP NOW <span>→</span></a>
             </div>
         </div>
     </section>
@@ -183,7 +213,7 @@
                     super-absorbent fabric that is also antibacterial
                     thanks to the natural properties of bamboo.
                 </p>
-                <a href="#">SHOP NOW →</a>
+                <a href="javascript:void(0)">SHOP NOW <span>→</span></a>
             </div>
             <div class="thirdAsideImage animate__animated wow animate__fadeInRight">
                 <img src="./images/minificated/thirdSecTowels-min.jpg" loading="lazy" alt="">
@@ -262,15 +292,25 @@
             <div class="galleryWrapper swiper swiperContainer">
                 <div class="gallery swiper-wrapper">
                     <div class="gallery__item gallery__item1 swiper-slide">
-                        <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="355" loading="lazy" src="./images/minificated/galleryOne-min.jpg" alt="">
-                        <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="355" loading="lazy" src="./images/minificated/galleryTwo-min.jpg" alt="">
+                        <a class="zoom" href="./images/minificated/galleryOne-min.jpg">
+                            <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="355" loading="lazy" src="./images/minificated/galleryOne-min.jpg" alt="">
+                        </a>
+                        <a class="zoom" href="./images/minificated/galleryTwo-min.jpg">
+                            <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="355" loading="lazy" src="./images/minificated/galleryTwo-min.jpg" alt="">
+                        </a>
                     </div>
                     <div class="gallery__item gallery__item2 swiper-slide">
-                        <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="510" loading="lazy" src="./images/minificated/galleryThree-min.jpg" alt="">
+                        <a class="zoom" href="./images/minificated/galleryThree-min.jpg">
+                            <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="510" loading="lazy" src="./images/minificated/galleryThree-min.jpg" alt="">
+                        </a>
                     </div>
                     <div class="gallery__item gallery__item3 swiper-slide">
-                        <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="355" loading="lazy" src="./images/minificated/galleryFour-min.jpg" alt="">
-                        <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="355" loading="lazy" src="./images/minificated/galleryFive-min.jpg" alt="">
+                        <a class="zoom" href="./images/minificated/galleryFour-min.jpg">
+                            <img class=" wow animate__animated animate__delay-1s animate__fadeIn" width="355" loading="lazy" src="./images/minificated/galleryFour-min.jpg" alt="">
+                        </a>
+                        <a class="zoom" href="./images/minificated/galleryFive-min.jpg">
+                            <img class="wow animate__animated animate__delay-1s animate__fadeIn" width="355" loading="lazy" src="./images/minificated/galleryFive-min.jpg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -294,22 +334,40 @@
                 <button type="submit" id="subWithEmail">SUBSCRIBE</button>
             </label>
         </form>
+        <div id="answerModalContainer" class="mfp-hide">
+            <div class="modalElements">
+                <div class="logo">
+                    <span>CONCETTI DI-LUSSO</span>
+                </div>
+                <div class="modalContent">
+                    <img src="./images/heart-outline.svg">
+                    <p>
+                        Thanks for the subscription ! <br>
+                        Our bot will answer you on this email
+                    </p>
+                    <hr>
+                    <p>
+                        © 2020, Concetti Di-Lusso Powered by Shopify
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="content-border footer-callback">
         <div class="list-column">
             <h3 class="footerTitle">Quick links</h3>
             <ul>
                 <li>
-                    <a href="">Privacy Policy</a>
+                    <a href="javascript:void(0)">Privacy Policy</a>
                 </li>
                 <li>
-                    <a href="">Return Policy</a>
+                    <a href="javascript:void(0)">Return Policy</a>
                 </li>
                 <li>
-                    <a href="">Terms of Service</a>
+                    <a href="javascript:void(0)">Terms of Service</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="javascript:void(0)">Contact</a>
                 </li>
             </ul>
         </div>
@@ -318,15 +376,15 @@
             <ul>
                 <li>
                     <img class="icon" src="./images/mapIcon.svg" alt="">
-                    <a>8385 South Allen Street, <br> Suite 111, <br> Sandy UT 84070</a>
+                    <a href="javascript:void(0)">8385 South Allen Street, <br> Suite 111, <br> Sandy UT 84070</a>
                 </li>
                 <li>
                     <img class="icon" src="./images/navPhoneNumber.svg" alt="">
-                    <a>801-462-6210</a>
+                    <a href="javascript:void(0)">801-462-6210</a>
                 </li>
                 <li>
                     <img class="icon" src="./images/navEmail.svg" alt="">
-                    <a>Support@concetti-di-lusso.com</a>
+                    <a href="javascript:void(0)">Support@concetti-di-lusso.com</a>
                 </li>
             </ul>
         </div>
@@ -349,8 +407,10 @@
 <script src="./libs/jQuery/jquery-3.7.1.js"></script>
 <script src="./libs/animations/wowJS/wow.min.js"></script>
 <script src="./libs/swiper/unpkg.com_swiper@8.4.7_swiper-bundle.min.js"></script>
+<script src="libs/modal/jquery.magnific-popup.min.js"></script>
 <script async src="./jscript/header.js"></script>
-<script defer src="./jscript/visual.js"></script>
+<script async src="./jscript/visual.js"></script>
 <script defer src="./jscript/slider.js"></script>
+<script defer src="jscript/popup.js"></script>
 </body>
 </html>
