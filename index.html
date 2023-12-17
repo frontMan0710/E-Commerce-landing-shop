@@ -113,7 +113,7 @@
     </section>
     <section class="first">
         <div class="content-border first__content">
-            <div class="swiper swiperContainer">
+            <div class="swiper cardSwiper swiperContainer">
                 <div class="cards first-cards swiper-wrapper animate__animated wow animate__fadeInLeft">
                     <div class="cards__card first-cards__card swiper-slide">
                         <img class="icon" src="./images/car.svg">
@@ -225,7 +225,7 @@
             <div class="fourth-title sectionTitle">
                 <h2 class="animate__animated wow animate__fadeInRightBig">Trending Product</h2>
             </div>
-            <div class="swiper swiperContainer">
+            <div class="swiper cardSwiper swiperContainer">
                 <div class="cards fourth-cards swiper-wrapper">
                     <div class="fourth-cards__card cards__card wow swiper-slide">
                         <img src="./images/minificated/towelSecFourthOne-min.jpg" loading="lazy" alt="">
@@ -270,17 +270,44 @@
             <div class="fifth-title sectionTitle">
                 <h2 class="animate__animated wow animate__fadeInUp">Our Testimonials</h2>
             </div>
-            <div class="quote-block">
+            <div class="quote-block swiper">
                 <img src="./images/comma.svg" class="animate__animated wow animate__delay-1s animate__zoomIn" alt="">
-                <div class="fifth-text-block">
-                    <p class="animate__animated wow animate__delay-1s animate__fadeIn">
-                        The item is in a great quality and is shipped in the wonderful presentation box. The little brooches are
-                        needed to be removed before washing. As far as softness goes, IMHO, I’ve seen softer ones. I would definitely would
-                        by again if they had different color patterns. Not everyone is so big on pastel pink.
-                    </p>
-                    <span class="animate__animated wow animate__fadeInLeft">-Valeriya</span>
+                <div class="fifth-slides swiper-wrapper">
+                    <div class="fifth-text-block swiper-slide">
+                        <p class="animate__animated wow animate__delay-1s animate__fadeIn">
+                            The item is in a great quality and is shipped in the wonderful presentation box. The little brooches are
+                            needed to be removed before washing. As far as softness goes, IMHO, I’ve seen softer ones. I would definitely would
+                            by again if they had different color patterns. Not everyone is so big on pastel pink.
+                        </p>
+                        <span class="animate__animated wow animate__fadeInLeft quoteAuthor">-Valeriya</span>
+                    </div>
+                    <div class="fifth-text-block swiper-slide">
+                        <p class="animate__animated wow animate__delay-1s animate__fadeIn">
+                            Impressed with the quality of these towels, they are a true testament to luxury.
+                            The packaging, complete with delicate brooches, adds a charming touch.
+                            I'd advise removing the brooches before washing
+                        </p>
+                        <span class="animate__animated wow animate__fadeInLeft quoteAuthor">-Jonathan</span>
+                    </div>
+                    <div class="fifth-text-block swiper-slide">
+                        <p class="animate__animated wow animate__delay-1s animate__fadeIn">
+                            I recently purchased these towels, and I must say the quality is outstanding.
+                            The luxurious feel against the skin is simply unmatched. The packaging was impressive,
+                            arriving in a beautifully presented box.
+                        </p>
+                        <span class="animate__animated wow animate__fadeInLeft quoteAuthor">-Lennie</span>
+                    </div>
+                    <div class="fifth-text-block swiper-slide">
+                        <p class="animate__animated wow animate__delay-1s animate__fadeIn">
+                            The towels arrived with an elegant presentation that made the unboxing experience delightful.
+                            The attention to detail, including the brooches, adds a touch of sophistication.
+                            However, it's essential to remove the brooches before washing.
+                        </p>
+                        <span class="animate__animated wow animate__fadeInLeft quoteAuthor">-Lawa</span>
+                    </div>
                 </div>
                 <img src="./images/reversedComma.svg" class="animate__animated wow animate__delay-1s animate__zoomIn" alt="">
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -289,7 +316,7 @@
             <div class="sixth-title sectionTitle">
                 <h2 class="animate__animated wow animate__fadeInDown">Product Gallery</h2>
             </div>
-            <div class="galleryWrapper swiper swiperContainer">
+            <div class="galleryWrapper cardSwiper swiper swiperContainer">
                 <div class="gallery swiper-wrapper">
                     <div class="gallery__item gallery__item1 swiper-slide">
                         <a class="zoom" href="./images/minificated/galleryOne-min.jpg">
