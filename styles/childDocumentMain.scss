@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body { width: 100%; height: 100%; }
+body.lock {
+  overflow: hidden;
+}
+nav, main, footer {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+}
+button, input, a { cursor: pointer; outline: none; text-decoration: none;}
+ul li { list-style: none;}
+
+.content-border {
+  .catalogue {
+    .catalogue__card {
+      .buyPanel {
+        button {
+          &:hover {
+            background-color: var(--color-white);
+            color: var(--color-black);
+          }
+        }
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    padding-top: 165px;
+    .content-border {
+      width: 1280px;
+      margin: 0 auto;
+      .catalogue {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+        .catalogue__card {
+          box-sizing: border-box;
+          position: relative;
+          width: 300px;
+          height: 418px;
+          padding: 23px 15px 33px 15px;
+          p {
+            font-family: "Open Sans", sans-serif, Regular;
+            color: var(--color-black);
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 22px;
+          }
+          .buyPanel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+            width: 100%;
+            span:nth-of-type(1) {
+              font-family: "Hind Siliguri", sans-serif, SemiBold;
+              color: var(--color-cherry);
+              font-weight: 600;
+              font-size: 24px;
+            }
+            span:nth-of-type(2) {
+              font-family: "Hind Siliguri", sans-serif, Regular;
+              color: var(--color-grey);
+              text-decoration: line-through;
+              font-weight: 400;
+              font-size: 16px;
+            }
+            button {
+              font-family: "Hind Siliguri", sans-serif, SemiBold;
+              background-color: var(--color-black);
+              color: var(--color-white);
+              font-weight: 600;
+              width: 120px;
+              height: 42px;
+              font-size: 16px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+  main {
+    padding-top: 12.89vw;
+    .content-border {
+      width: 88.89%;
+      height: 100%;
+      margin: 0 auto;
+      .catalogue {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        .catalogue__card {
+          position: relative;
+          max-width: 23vw;
+          max-height: 32.6vw;
+          padding: 23px 15px 60px 15px;
+          p {
+            font-family: "Open Sans", sans-serif, Regular;
+            color: var(--color-black);
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 22px;
+          }
+          .buyPanel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            span:nth-of-type(1) {
+              font-family: "Hind Siliguri", sans-serif, SemiBold;
+              color: var(--color-cherry);
+              font-weight: 600;
+              font-size: 1.9vw;
+            }
+            span:nth-of-type(2) {
+              font-family: "Hind Siliguri", sans-serif, Regular;
+              color: var(--color-grey);
+              text-decoration: line-through;
+              font-weight: 400;
+              font-size: 1.25vw;
+            }
+            button {
+              font-family: "Hind Siliguri", sans-serif, SemiBold;
+              background-color: var(--color-black);
+              color: var(--color-white);
+              font-weight: 600;
+              width: 10vw;
+              height: 3.28vw;
+              font-size: 1.25vw;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  main {
+    padding-top: 70px;
+    .content-border {
+      width: 92vw;
+      height: 100%;
+      margin: 0 auto;
+      .catalogue {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        .catalogue__card {
+          position: relative;
+          max-width: 23vw;
+          max-height: 32.6vw;
+          padding: 1.8vw 1.17vw 4.7vw 1.17vw;
+          p {
+            font-family: "Open Sans", sans-serif, Regular;
+            color: var(--color-black);
+            font-weight: 400;
+            font-size: 1.7vw;
+            margin-top: 22px;
+          }
+          .buyPanel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            span:nth-of-type(1) {
+              font-family: "Hind Siliguri", sans-serif, SemiBold;
+              color: var(--color-cherry);
+              font-weight: 600;
+              font-size: 1.9vw;
+            }
+            span:nth-of-type(2) {
+              font-family: "Hind Siliguri", sans-serif, Regular;
+              color: var(--color-grey);
+              text-decoration: line-through;
+              font-weight: 400;
+              font-size: 1.25vw;
+            }
+            button {
+              font-family: "Hind Siliguri", sans-serif, SemiBold;
+              background-color: var(--color-black);
+              color: var(--color-white);
+              font-weight: 600;
+              width: 10vw;
+              height: 3.28vw;
+              font-size: 1.25vw;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 300px) {
+  main {
+    padding-top: 70px;
+    .content-border {
+      width: 92vw;
+      height: 100%;
+      margin: 0 auto;
+      .catalogue {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        .catalogue__card {
+          max-width: 300px;
+          max-height: fit-content;
+          padding: 23px 15px 33px 15px;
+          img {
+            width: 300px;
+            height: 100%;
+          }
+          p {
+            font-family: "Open Sans", sans-serif, Regular;
+            color: var(--color-black);
+            font-weight: 400;
+            font-size: 1.2rem;
+            margin-top: 4vh;
+          }
+          .buyPanel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 4vh;
+            height: 8vw;
+            span:nth-of-type(1) {
+              font-family: "Hind Siliguri", sans-serif, SemiBold;
+              color: var(--color-cherry);
+              font-weight: 600;
+              font-size: 1.6rem;
+            }
+            span:nth-of-type(2) {
+              font-family: "Hind Siliguri", sans-serif, Regular;
+              color: var(--color-grey);
+              text-decoration: line-through;
+              font-weight: 400;
+              font-size: 1.6rem;
+            }
+            button {
+              font-family: "Hind Siliguri", sans-serif, SemiBold;
+              background-color: var(--color-black);
+              color: var(--color-white);
+              font-weight: 600;
+              width: fit-content;
+              height: auto;
+              font-size: 1.2rem;
+              padding: 0 2vw 0 2vw;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

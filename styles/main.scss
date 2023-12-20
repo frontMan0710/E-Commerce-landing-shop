@@ -13,7 +13,7 @@ nav, main, footer {
   overflow: hidden;
   margin: 0 auto;
 }
-button, input, a { cursor: pointer; outline: none}
+button, input, a { cursor: pointer; outline: none; text-decoration: none;}
 ul li { list-style: none;}
 
 .start {
@@ -25,6 +25,9 @@ ul li { list-style: none;}
           color: var(--color-white);
         }
         span {
+          display: flex;
+          align-items: center;
+          height: 100%;
           font-size: 26px;
           margin-left: 5px;
         }
@@ -1959,6 +1962,7 @@ ul li { list-style: none;}
             font-size: 1.2rem;
             border-radius: 5px;
             span {
+              height: 100%;
               font-size: 26px;
               margin-left: 5px;
             }
@@ -2110,6 +2114,11 @@ ul li { list-style: none;}
             font-size: 1.2rem;
             border-radius: 5px;
             margin-top: 20px;
+            span {
+              height: 100%;
+              font-size: 26px;
+              margin-left: 5px;
+            }
           }
         }
         .thirdAsideImage {
