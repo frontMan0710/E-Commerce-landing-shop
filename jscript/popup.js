@@ -17,6 +17,7 @@ $(function () {
         focus: '#phoneNumber',
         preloader: false,
         closeBtnInside: false,
+        overflow: false,
     })
     $("#mail").on("input", function () {
         var inputValue = $(this).val();
@@ -31,5 +32,14 @@ $(function () {
                 overflow: false,
             })
         }
+    })
+    $(".iconCart").magnificPopup({
+        items: {
+            src: "#cartModalContainer",
+            type: "inline",
+            modal: true
+        },
+        closeBtnInside: false,
+        overflow: false,
     })
 })

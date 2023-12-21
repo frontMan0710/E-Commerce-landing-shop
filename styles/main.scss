@@ -1230,6 +1230,12 @@ ul li { list-style: none;}
             margin-top: 32px;
             font-size: 1.9vw;
             border-radius: 5px;
+            span {
+              display: flex;
+              align-items: center;
+              height: 100%;
+              font-size: 3vw;
+            }
           }
         }
       }
@@ -1588,6 +1594,13 @@ ul li { list-style: none;}
             margin-top: 32px;
             font-size: 1.8rem;
             border-radius: 5px;
+            span {
+              display: flex;
+              align-items: center;
+              height: 100%;
+              font-size: 1.8rem;
+              margin-left: 1vw;
+            }
           }
         }
       }
@@ -1962,8 +1975,10 @@ ul li { list-style: none;}
             font-size: 1.2rem;
             border-radius: 5px;
             span {
+              display: flex;
+              align-items: center;
               height: 100%;
-              font-size: 26px;
+              font-size: 1.6rem;
               margin-left: 5px;
             }
           }
